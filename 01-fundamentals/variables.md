@@ -33,7 +33,7 @@ Chuỗi giờ được lưu vào vùng nhớ liên kết với biến. Chúng ta
 let message;
 message = 'Hello!';
 
-alert(message);  // hiển thị nội dung của biến
+console.log(message);  // hiển thị nội dung của biến
 ```
 
 Chúng ta có thể khai báo nhiều biến trên một dòng:
@@ -69,7 +69,7 @@ message = 'Hello!';
 
 message = 'World!'; // giá trị đã thay đổi
 
-alert(message);
+console.log(message);
 ```
 
 Khi giá tị được thay đổi, dữ liệu cũ sẽ bị xóa khỏi biến:
@@ -87,8 +87,8 @@ let message;
 message = hello;
 
 // giờ hai biến cùng lưu một dữ liệu giống nhau
-alert(hello);  // Hello world!
-alert(message);  // Hello world!
+console.log(hello);  // Hello world!
+console.log(message);  // Hello world!
 ```
 
 > Một biến chỉ nên được khai báo một lần.
@@ -126,7 +126,7 @@ Những tên này hợp lệ:
 let $ = 1;
 let _ = 2;
 
-alert($ + _);  // 3
+console.log($ + _);  // 3
 ```
 
 Ví dụ về tên biến không hợp lệ:
