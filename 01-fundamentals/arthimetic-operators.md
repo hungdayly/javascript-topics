@@ -16,14 +16,14 @@ Trước khi tiếp tục, hãy nắm bắt một số thuật ngữ phổ biế
     let x = 1;
 
     x = -x;
-    alert( x );  // -1
+    console.log( x );  // -1
     ```
 
 - Một toán tử được gọi là *hai ngôi* nếu nó cần hai toán hạng để hoạt động. Dấu trừ cũng tồn tại ở dạng hai ngôi, tức là phép toán trừ:
 
     ```javascript
     let x = 1, y = 3;
-    alert( y - x );  // 2
+    console.log( y - x );  // 2
     ```
 
 ## Các phép toán
@@ -46,8 +46,8 @@ Phép toán `a % b` là số dư của phép chia `a` cho `b`.
 Ví dụ:
 
 ```javascript
-alert( 5 % 2 );  // 1
-alert( 8 % 3 );  // 2
+console.log( 5 % 2 );  // 1
+console.log( 8 % 3 );  // 2
 ```
 
 ### Lũy thừa `**`
@@ -57,16 +57,16 @@ Phép toán `a ** b` trả về kết quả là "a mũ b".
 Ví dụ:
 
 ```javascript
-alert( 2 ** 2 );  // 4
-alert( 2 ** 3 );  // 8
-alert( 2 ** 4 );  // 16
+console.log( 2 ** 2 );  // 4
+console.log( 2 ** 3 );  // 8
+console.log( 2 ** 4 );  // 16
 ```
 
 Lũy thừa cũng được định nghĩa cho các số không nguyên. Ví dụ căn bậc hai là lũy thừa của `1/2`:
 
 ```javascript
-alert( 4 ** (1/2) );  // 2
-alert( 8 ** (1/3) );  // 2
+console.log( 4 ** (1/2) );  // 2
+console.log( 8 ** (1/3) );  // 2
 ```
 
 ## Toán tử nối chuỗi `+`
@@ -79,7 +79,7 @@ Nhưng nếu, toán tử `+` áp dụng cho các chuỗi, nó sẽ hợp nhất 
 
 ```javascript
 let s = "my" + "string";
-alert(s);  // mystring
+console.log(s);  // mystring
 ```
 
 Thực ra chỉ cần một toán hạng là chuỗi, toán hạng kia tự được chuyển thành chuỗi và chúng được nối với nhau.
@@ -87,10 +87,10 @@ Thực ra chỉ cần một toán hạng là chuỗi, toán hạng kia tự đư
 Ví dụ:
 
 ```javascript
-alert( '1' + 2 );  // "12"
-alert( 2 + '1' );  // "21"
+console.log( '1' + 2 );  // "12"
+console.log( 2 + '1' );  // "21"
 
-alert( 2 + 2 + '1' );  // "41"
+console.log( 2 + 2 + '1' );  // "41"
 ```
 
 Chỉ toán tử `+` mới hỗ trợ thao tác nối chuỗi này. Các toán tử số học khác chỉ làm việc với các số và luôn chuyển đổi toán hạng của chúng thành số.
@@ -98,8 +98,8 @@ Chỉ toán tử `+` mới hỗ trợ thao tác nối chuỗi này. Các toán t
 Ví dụ:
 
 ```javascript
-alert( 6 - '2' );  // 4
-alert( '6' / '2' );  // 3
+console.log( 6 - '2' );  // 4
+console.log( '6' / '2' );  // 3
 ```
 
 ## Toán tử chuyển đổi số `+`
@@ -115,14 +115,14 @@ Ví dụ:
 ```javascript
 // Không có tác dụng với các số
 let x = 1;
-alert( +x );  // 1
+console.log( +x );  // 1
 
 let y = -2;
-alert( +y ); // -2
+console.log( +y ); // -2
 
 // Chuyển đổi các toán hạng không phải số
-alert( +true );  // 1
-alert( +"" );  // 0
+console.log( +true );  // 1
+console.log( +"" );  // 0
 ```
 
 Nó tương đương với `Number(...)` nhưng ngắn hơn.
@@ -157,7 +157,7 @@ Hãy lưu ý rằng, phép gán `=`, thực ra cũng là một toán tử, nó c
 ```javascript
 let x = 2 * 2 + 1;
 
-alert(x);  // 5
+console.log(x);  // 5
 ```
 
 ### Toán tử `=` trả về một giá trị
@@ -174,8 +174,8 @@ let b = 2;
 
 let c = 3 - (a = b + 1);
 
-alert( a );  // 3
-alert( c );  // 0
+console.log( a );  // 3
+console.log( c );  // 0
 ```
 
 ### Một dãy các lệnh gán
@@ -187,9 +187,9 @@ let a, b, c;
 
 a = b = c = 2 + 2;
 
-alert( a );  // 4
-alert( b );  // 4
-alert( c );  // 4
+console.log( a );  // 4
+console.log( b );  // 4
+console.log( c );  // 4
 ```
 
 Thực tế các toán tử `=` được chạy lần lượt từ phải qua trái.
@@ -205,7 +205,7 @@ let n = 2;
 n = n + 5;
 n = n * 2;
 
-alert( n );  // 14
+console.log( n );  // 14
 ```
 
 Ta có thể viết ngắn hơn bằng cách sử dụng các toán tử `+=` và `*=`:
@@ -215,7 +215,7 @@ let n = 2;
 n += 5; // giờ n = 7 (giống như n = n + 5)
 n *= 2; // giờ n = 14 (giống như n = n * 2)
 
-alert( n );  // 14
+console.log( n );  // 14
 ```
 
 Tất cả các toán tử số học đều hỗ trợ dạng kết hợp này, ví dụ `/=`, `-=`, `**=`, `%=`, v.v.
@@ -227,7 +227,7 @@ let n = 2;
 
 n *= 3 + 5;
 
-alert( n );  // 16
+console.log( n );  // 16
 ```
 
 ## Tăng/giảm
@@ -240,13 +240,13 @@ Vì vậy, có những toán tử đặc biệt cho nó:
     ```javascript
     let counter = 2;
     counter++;  // tương đương counter = counter + 1
-    alert( counter );  // 3
+    console.log( counter );  // 3
     ```
 - **Toán tử giảm**: `--` làm giảm một biến đi `1`:
     ```javascript
     let counter = 2;
     counter--;  // tương đương counter = counter - 1
-    alert( counter );  // 1
+    console.log( counter );  // 1
     ```
 
 Các toán tử `++` và `--` có thể được đặt trước hoặc sau toán hạng của nó. Khác biệt chỉ là giá trị trả về là giá trị của biến trước hay sau khi thay đổi.
@@ -258,8 +258,8 @@ Các toán tử `++` và `--` có thể được đặt trước hoặc sau toá
     let counter = 1;
     let a = ++counter;
 
-    alert( counter );  // 2
-    alert( a );  // 2
+    console.log( counter );  // 2
+    console.log( a );  // 2
     ```
 
 - Khi đặt trước: trả về giá trị sau khi thay đổi, ví dụ `++counter`.
@@ -269,8 +269,8 @@ Các toán tử `++` và `--` có thể được đặt trước hoặc sau toá
     let counter = 1;
     let a = counter++;
 
-    alert( counter );  // 2
-    alert( a );  // 1
+    console.log( counter );  // 2
+    console.log( a );  // 1
     ```
 
 ## Toán tử bitwise
@@ -302,7 +302,7 @@ Ví dụ:
 ```javascript
 let a = (1 + 2, 3 + 4);
 
-alert( a );  // 7
+console.log( a );  // 7
 ```
 
 Toán tử dấu phảy có thứ tự ưu tiên vô cùng thấp, thấp hơn cả toán tử gán, vì vậy dấu ngoặc cần được sử dụng trong ví dụ trên.
