@@ -2,7 +2,7 @@
 
 Hầu hết thời gian, các toán tử và hàm tự động chuyển đổi các giá trị được cấp cho chúng thành kiểu phù hợp.
 
-Ví dụ: `alert` tự động chuyển đổi bất kỳ giá trị nào thành một chuỗi để hiển thị nó. Các toán tử số học chuyển đổi giá trị thành số.
+Ví dụ: `console.log` tự động chuyển đổi bất kỳ giá trị nào thành một chuỗi để hiển thị nó. Các toán tử số học chuyển đổi giá trị thành số.
 
 Cũng có những trường hợp khi chúng ta cần chuyển đổi rõ ràng một giá trị thành kiểu mong đợi.
 
@@ -10,16 +10,16 @@ Cũng có những trường hợp khi chúng ta cần chuyển đổi rõ ràng 
 
 Chuyển đổi chuỗi xảy ra khi chúng ta cần dạng chuỗi của một giá trị.
 
-Ví dụ, `alert(value)`, giá trị `value` được chuyển thành chuỗi và được hiển thị.
+Ví dụ, `console.log(value)`, giá trị `value` được chuyển thành chuỗi và được hiển thị.
 
 Chúng ta cũng có thể gọi `String(value)` để chuyển đổi `value` thành một chuỗi:
 
 ```javascript
 let value = true;
-alert(typeof value);  // boolean
+console.log(typeof value);  // boolean
 
 value = String(value);  // giờ value là chuỗi "true"
-alert(typeof value);  // string
+console.log(typeof value);  // string
 ```
 
 Kết quả chuyển đổi chuỗi rất trực quan. Giá trị `false` trở thành chuỗi `"false"`, giá trị `null` trở thành `"null"`,v.v.
@@ -31,18 +31,18 @@ Tự động chuyển đổi số xảy ra trong các hàm và toán tử số h
 Ví dụ, khi phép chia `/` được áp dụng cho các giá trị không phải số:
 
 ```javascript
-alert( "6" / "2" );  // 3, các chuỗi được chuyển thành số
+console.log( "6" / "2" );  // 3, các chuỗi được chuyển thành số
 ```
 
 Chúng ta có thể sử dụng `Number(value)` để chuyển đổi một cách rõ ràng `value` thành một số:
 
 ```javascript
 let str = "123";
-alert(typeof str);  // string
+console.log(typeof str);  // string
 
 let num = Number(str); // trở thành số 123
 
-alert(typeof num);  // number
+console.log(typeof num);  // number
 ```
 
 Chuyển đổi rõ ràng thường được yêu cầu khi chúng ta đọc một giá trị số từ bàn phím do người dùng nhập vào.
@@ -52,7 +52,7 @@ Nếu chuỗi không phải là một số hợp lệ, kết quả của chuyể
 ```javascript
 let age = Number("an arbitrary string instead of a number");
 
-alert(age);  // NaN, chuyển đổi thất bại
+console.log(age);  // NaN, chuyển đổi thất bại
 ```
 
 Quy tắc chuyển đổi số:
@@ -67,10 +67,10 @@ Quy tắc chuyển đổi số:
 Ví dụ:
 
 ```javascript
-alert( Number("   123   ") );  // 123
-alert( Number("123z") );  // NaN (lỗi khi đọc đến "z")
-alert( Number(true) );  // 1
-alert( Number(false) );  // 0
+console.log( Number("   123   ") );  // 123
+console.log( Number("123z") );  // NaN (lỗi khi đọc đến "z")
+console.log( Number(true) );  // 1
+console.log( Number(false) );  // 0
 ```
 
 Xin lưu ý rằng `null` và `undefined` cư xử khác ở đây: `null` trở thành `0` trong khi `undefined` trở thành `NaN`.
@@ -91,9 +91,9 @@ Quy tắc chuyển đổi:
 Ví dụ:
 
 ```javascript
-alert( Boolean(1) );  // true
-alert( Boolean(0) );  // false
+console.log( Boolean(1) );  // true
+console.log( Boolean(0) );  // false
 
-alert( Boolean("hello") );  // true
-alert( Boolean("") );  // false
+console.log( Boolean("hello") );  // true
+console.log( Boolean("") );  // false
 ```
