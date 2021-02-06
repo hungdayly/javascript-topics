@@ -29,19 +29,19 @@ Bên cạnh các số thông thường, JavaScript có những giá trị số r
 
 - `Infinity`: đại diện cho dương vô cùng trong Toán. Đó là một số đặc biệt, lớn hơn bất kỳ số nào. Ta có thể thu được nó khi chia một số dương cho số `0`:
     ```javascript
-    alert( 1 / 0 );  // Infinity
+    console.log( 1 / 0 );  // Infinity
     ```
     Hoặc có thể tham chiếu trực tiếp:
     ```javascript
-    alert( Infinity );  // Infinity
+    console.log( Infinity );  // Infinity
     ```
 - `NaN`: đại diện cho một lỗi tính toán. Ví dụ: nó là kết quả của một phép toán không hợp lệ, hoặc không xác định:
     ```javascript
-    alert( "not a number" / 2 );  // NaN
+    console.log( "not a number" / 2 );  // NaN
     ```
     `NaN` được bảo toàn. Bất cứ phép toán nào xuất hiện `NaN` cuối cùng đều trả về `NaN`.
     ```javascript
-    alert( "not a number" / 2 + 5 );  // NaN
+    console.log( "not a number" / 2 + 5 );  // NaN
     ```
 
 ## Kiểu BigInt
@@ -80,10 +80,10 @@ Dấu tích ngược là dấu nháy có chức năng mở rộng. Chúng cho ph
 let name = "John";
 
 // nhúng một biến
-alert( `Hello, ${name}!`);  // Hello, John!
+console.log( `Hello, ${name}!`);  // Hello, John!
 
 // nhúng một biểu thức
-alert( `the result is ${1 + 2}` );  // the result is 3
+console.log( `the result is ${1 + 2}` );  // the result is 3
 ```
 
 Biểu thức bên trong `${...}` được chạy và kết quả trả về trở thành một phần của chuỗi. Chúng ta có thể đưa bất cứ thứ gì vào đó: một biến như `name` hoặc một biểu thức số học như `1 + 2` hoặc một cái gì đó phức tạp hơn.
@@ -108,7 +108,7 @@ Các giá tri lôgic cũng là kết quả của các phép so sánh:
 ```javascript
 let isGreater = 4 > 1;
 
-alert(isGreater);  // true (so sánh trả về kết quả đúng)
+console.log(isGreater);  // true (so sánh trả về kết quả đúng)
 ```
 
 ## Kiểu "null"
@@ -132,7 +132,7 @@ Nếu một biến đã được khai báo, nhưng không được gán, thì gi
 ```javascript
 let age;
 
-alert(age); // hiển thị "undefined"
+console.log(age); // hiển thị "undefined"
 ```
 
 Về mặt kỹ thuật, có thể gán rõ ràng `undefined` cho một biến:
@@ -143,7 +143,7 @@ let age = 100;
 // đổi giá trị thành undefined
 age = undefined;
 
-alert(age);  // "undefined"
+console.log(age);  // "undefined"
 ```
 
 ... Nhưng bạn không nên làm như vậy. Thông thường, người ta sử dụng `null` thay vì `undefined` trong trường hợp này. `undefined` được dành riêng làm giá trị ban đầu mặc định cho những biến chưa đƯợc gán giá trị ban đầu.
@@ -188,7 +188,7 @@ typeof Math;  // "object"  (1)
 
 typeof null;  // "object"  (2)
 
-typeof alert;  // "function"  (3)
+typeof console.log;  // "function"  (3)
 ```
 
 Ba dòng cuối cần giải thích thêm:
@@ -197,4 +197,4 @@ Ba dòng cuối cần giải thích thêm:
 
 2. Kết quả của `typeof null` là `"object"`. Đó là một lỗi được chấp nhận của JavaScript để giữ lại sự tương thích ngược.
 
-3. Kết quả của `typeof alert` là `"function"`, bởi vì `alert` là một hàm. Chúng ta sẽ nghiên cứu các hàm trong các chương tiếp theo, nơi chúng ta biết rằng, không có kiểu nào là kiểu hàm. Các hàm vẫn là các đối tượng. Nhưng `typeof` đối xử với hàm theo một cách đặc biệt, cho kết quả rõ ràng `"function"` thay vì `"object"`. Hành vi này của `typeof` là không đúng, nhưng lại thuận tiện khi làm việc với các hàm, do vậy nó được chấp nhận.
+3. Kết quả của `typeof console.log` là `"function"`, bởi vì `console.log` là một hàm. Chúng ta sẽ nghiên cứu các hàm trong các chương tiếp theo, nơi chúng ta biết rằng, không có kiểu nào là kiểu hàm. Các hàm vẫn là các đối tượng. Nhưng `typeof` đối xử với hàm theo một cách đặc biệt, cho kết quả rõ ràng `"function"` thay vì `"object"`. Hành vi này của `typeof` là không đúng, nhưng lại thuận tiện khi làm việc với các hàm, do vậy nó được chấp nhận.
