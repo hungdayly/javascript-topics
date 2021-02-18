@@ -34,7 +34,7 @@ Lệnh `if (...)` đánh giá biểu thức trong dấu ngoặc đơn và chuy�
 Ta đã biết:
 
 - Số `0` và `NaN`; chuỗi trống `""`; các giá trị đặc biệt `null` và `undefined` được chuyển thành `false`. Chúng được gọi là các giá trị *giả dối* (falsy).
-- Các giá trị khác được chuyển thành `true`. Chúng được gọi là các giá trị *sự thật* (truthy).
+- Các giá trị khác được chuyển thành `true`. Chúng được gọi là các giá trị *trung thực* (truthy).
 
 Vì vậy, mã trong điều kiện này sẽ không bao giờ thực thi:
 
@@ -47,7 +47,7 @@ if (0) { // 0 là "giả dối"
 ... và bên trong điều kiện này sẽ luôn chạy:
 
 ```javascript
-if (1) {  // 1 là "sự thật"
+if (1) {  // 1 là "trung thực"
     // mã ở đây luôn chạy
 }
 ```
@@ -116,7 +116,7 @@ Cú pháp là:
 let result = condition ? value1 : value2;
 ```
 
-Giá trị của `condition` được đánh giá: nếu nó là *sự thật* thì `value1` được trả về, nếu nó là *giả dối* thì `value2` được trả về.
+Giá trị của `condition` được đánh giá: nếu nó là *trung thực* thì `value1` được trả về, nếu nó là *giả dối* thì `value2` được trả về.
 
 Ví dụ:
 
