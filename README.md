@@ -10,3 +10,4 @@
 6. [Câu lệnh và biểu thức điều kiện](01-fundamentals/conditional-branching.md)
 7. [Các toán tử lôgic](01-fundamentals/logical-operators.md)
 8. [Toán tử `??`](01-fundamentals/nullish-operator.md)
+9. [Vòng lặp](01-fundamentals/loops.md)
