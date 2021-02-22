@@ -11,3 +11,4 @@
 7. [Các toán tử lôgic](01-fundamentals/logical-operators.md)
 8. [Toán tử `??`](01-fundamentals/nullish-operator.md)
 9. [Vòng lặp](01-fundamentals/loops.md)
+10. [Lệnh switch](01-fundamentals/switch-statement.md)
