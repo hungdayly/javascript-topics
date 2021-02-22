@@ -14,3 +14,4 @@
 10. [Lệnh switch](01-fundamentals/switch-statement.md)
 11. [Hàm](01-fundamentals/functions.md)
 12. [Biểu thức hàm](01-fundamentals/function-expressions.md)
+13. [Hàm mũi tên](01-fundamentals/arrow-functions.md)
