@@ -15,3 +15,7 @@
 11. [Hàm](01-fundamentals/functions.md)
 12. [Biểu thức hàm](01-fundamentals/function-expressions.md)
 13. [Hàm mũi tên](01-fundamentals/arrow-functions.md)
+
+## Giới thiệu về đối tượng
+
+1. [Đối tượng](02-objects/objects.md)
