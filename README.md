@@ -19,3 +19,4 @@
 ## Giới thiệu về đối tượng
 
 1. [Đối tượng](02-objects/objects.md)
+2. [Tham chiếu](02-objects/object-references.md)
