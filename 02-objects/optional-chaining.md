@@ -109,8 +109,7 @@ delete user?.name; // delete user.name nếu nó tồn tại
 > **Không thể sử dụng `?.` để ghi một thuộc tính**
 > ```javascript
 > let user = null;
-
-user?.name = "John"; // lỗi, không làm việc
+> user?.name = "John"; // lỗi, không làm việc
 > ```
 
 ## Tóm tắt
