@@ -22,3 +22,4 @@
 2. [Tham chiếu](02-objects/object-references.md)
 3. [Phương thức và "this"](02-objects/methods-and-this.md)
 4. [Hàm tạo và toán tử "new"](02-objects/constructor-new.md)
+5. [Truy cập thuộc tính một cách an toàn](02-objects/optional-chaining.md)
