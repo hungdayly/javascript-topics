@@ -21,3 +21,4 @@
 1. [Đối tượng](02-objects/objects.md)
 2. [Tham chiếu](02-objects/object-references.md)
 3. [Phương thức và "this"](02-objects/methods-and-this.md)
+4. [Hàm tạo và toán tử "new"](02-objects/constructor-new.md)
