@@ -24,3 +24,4 @@
 4. [Hàm tạo và toán tử "new"](02-objects/constructor-new.md)
 5. [Truy cập thuộc tính một cách an toàn](02-objects/optional-chaining.md)
 6. [Kiểu symbol](02-objects/symbol-type.md)
+7. [Chuyển đổi đối tượng thành các kiểu cơ sở](02-objects/object-to-primitive-conversion.md)
