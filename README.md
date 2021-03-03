@@ -16,10 +16,11 @@
 12. [Biểu thức hàm](01-fundamentals/function-expressions.md)
 13. [Hàm mũi tên](01-fundamentals/arrow-functions.md)
 
-## Giới thiệu về đối tượng
+## Đối tượng (cơ bản)
 
 1. [Đối tượng](02-objects/objects.md)
 2. [Tham chiếu](02-objects/object-references.md)
 3. [Phương thức và "this"](02-objects/methods-and-this.md)
 4. [Hàm tạo và toán tử "new"](02-objects/constructor-new.md)
 5. [Truy cập thuộc tính một cách an toàn](02-objects/optional-chaining.md)
+6. [Kiểu symbol](02-objects/symbol-type.md)
