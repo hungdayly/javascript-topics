@@ -25,3 +25,7 @@
 5. [Truy cập thuộc tính một cách an toàn](02-objects/optional-chaining.md)
 6. [Kiểu symbol](02-objects/symbol-type.md)
 7. [Chuyển đổi đối tượng thành các kiểu cơ sở](02-objects/object-to-primitive-conversion.md)
+
+## Các kiểu dữ liệu
+
+1. [Các phương thức của kiểu cơ sở](03-data-types/methods-of-primitives.md)
