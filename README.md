@@ -29,3 +29,4 @@
 ## Các kiểu dữ liệu
 
 1. [Các phương thức của kiểu cơ sở](03-data-types/methods-of-primitives.md)
+2. [Kiểu số](03-data-types/numbers.md)
